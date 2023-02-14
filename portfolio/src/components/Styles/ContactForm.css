@@ -1,0 +1,21 @@
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 5rem;
+    width: fit-content;
+}
+
+.contact-field{
+    width: 15rem;
+}
+
+#message{
+    height: 15rem;
+    width: 30rem;
+}
+
+#submit-button{
+    margin-top: 1rem;
+    width: 10rem;
+}

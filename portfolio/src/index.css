@@ -1,0 +1,67 @@
+.App{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 12px;
+}
+
+body{ 
+  margin-top: 10%
+}
+
+footer{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: static;
+  background-color: lightblue;
+}
+.footer-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: red;
+  height:fit-content;
+  display: flex;
+  padding-left: 6%;
+  padding-right: 6%;
+
+}
+
+nav {
+left:0;
+right: 0;
+position: sticky;
+margin: 0;
+}
+
+
+#header-name{
+  font-size: 2rem;
+}
+
+.header-links{
+  font-size: 1.25rem;
+  right: 0;
+}
+
+.title{
+  font-size: 1.25rem;
+}
+
+
+.navbar-collapse{
+  flex-grow: 0;
+}
+
+.navbar-expand{
+  width: 100%;
+}
+
+

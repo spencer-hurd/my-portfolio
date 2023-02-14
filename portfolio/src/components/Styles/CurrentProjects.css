@@ -1,0 +1,21 @@
+.project-pic{
+    background-color: red;
+    height: 20rem;
+    width: 40rem
+}
+
+.pic-desc{
+    display: flex;
+}
+
+.project-desc{
+    padding-left: 2rem;
+    height: 20rem;
+    width: 40rem;
+}
+
+.project-name{
+    font-size: 1.5rem;
+}
+
+

@@ -1,0 +1,16 @@
+{
+    "forms": {
+      "contact": {
+        "name": "Contact Form",
+        "fields": {
+          "email": {"label": "Email Address", "type": "email", "required": true },
+          "name": {"label": "Name", "type": "name", "required": true },
+          "phone": {"label": "Phone Number", "type": "text", "required": true },
+          "message": {"label": "Message", "type": "text", "required": true }
+        },
+        "actions": [
+          { "type": "email", "to": "schurd02@gmail.com" }
+        ]
+      }
+    }
+  }

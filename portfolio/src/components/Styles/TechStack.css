@@ -1,0 +1,43 @@
+.tech-stack{
+    display: flex;
+    flex-direction: column;
+}
+
+.stacks{
+    display: flex;
+    justify-content: center;
+}
+
+.full-stack{
+    background-color: red;
+    margin: 1rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    width: 20rem;
+}
+
+.tech-h5{
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.stack-icon{
+    background-color: aliceblue;
+    margin-bottom: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.stack-icon:hover{
+    background-color: aqua;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.stack-icon a{
+    text-decoration: none;
+    color: black;
+}
+
