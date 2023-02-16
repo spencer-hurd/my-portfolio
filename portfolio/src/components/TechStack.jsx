@@ -6,7 +6,7 @@ import { BsFillBootstrapFill } from "react-icons/bs";
 import { IoLogoCss3, IoLogoReact, IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
 import { SiExpress, SiPostgresql, SiJson, SiVite } from "react-icons/si";
 import './Styles/TechStack.css'
-import {Sticky, StickyContainer} from 'react-sticky'
+// import {Sticky, StickyContainer} from 'react-sticky'
 
 const TechStack = () => {
     return(
@@ -21,7 +21,7 @@ const TechStack = () => {
                         placement='left'
                         overlay={
                            
-                            <Sticky>{({ style }) => 
+                            // <Sticky>{({ style }) => 
                             <Tooltip style={style} container='body' id='front-end-tooltip' className="stack-tooltip">
                                 Front-end development is the process of creating the
                                 visuals and interactions of a website or web application.
@@ -32,7 +32,7 @@ const TechStack = () => {
                                 allow developers to create dynamic, interactive web experiences
                                 that look great and are easy to use.
                             </Tooltip>
-                            }</Sticky>
+                            // }</Sticky>
                         }
                         >
                         <ul variant="secondary" className="full-stack">
