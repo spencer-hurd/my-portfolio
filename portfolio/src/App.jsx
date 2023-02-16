@@ -20,8 +20,6 @@ const router = createBrowserRouter(
         <Route path='/about' element={<About />} />
         <Route path='/portfolio' element={<Portfolio />} />
       </Route>
-      
-    
   )
 )
 export default App

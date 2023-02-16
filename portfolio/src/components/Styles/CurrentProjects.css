@@ -1,7 +1,9 @@
 .project-pic{
-    background-color: red;
+    background-color: #FF5036;
     height: 20rem;
-    width: 40rem
+    width: 40rem;
+    border-radius: 5%;
+    padding: .5rem;
 }
 
 .pic-desc{
@@ -16,6 +18,10 @@
 
 .project-name{
     font-size: 1.5rem;
+}
+
+.h-3{
+    font-size: 2rem;
 }
 
 

@@ -3,7 +3,7 @@ import './Styles/CurrentProjects.css'
 const CurrentProjects = () => {
     return (
         <div>
-            <h3>Current Projects:</h3>
+            <h3 className='h-3'>Current Projects:</h3>
             <hr />
             <p>Here's what I'm currently working on.</p>
             <div className="project">

@@ -9,12 +9,32 @@
 }
 
 .full-stack{
-    background-color: red;
+    background-color: #FF5036;
+    border-radius: 5%;
     margin: 1rem;
     padding: 2rem;
     font-size: 1.5rem;
-    width: 20rem;
+    height: 38rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
+.full-stack.tooltip{
+    position: fixed !important;
+}
+
+.full-stack:hover{
+    border: .25rem dashed #4FCAFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+
+}
+
+.full-stack:hover h5{
+    font-weight: bold;
+} 
 
 .tech-h5{
     font-size: 2rem;
@@ -23,21 +43,61 @@
     justify-content: center;
 }
 
+
+.h-3{
+    font-size: 2rem;
+    color: #4FCAFF
+}
 .stack-icon{
-    background-color: aliceblue;
-    margin-bottom: 1rem;
     list-style: none;
+}
+.stack-icon a{
+    background-color: #4FCAFF;
+    border-radius: 5%;
+    margin-bottom: 1rem;
     display: flex;
+    font-size: 1.5rem;
+    width: 15rem;
+    flex-direction: column;
+    padding: .5rem;
     justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #022D50;
 }
 
-.stack-icon:hover{
-    background-color: aqua;
+
+.stack-icon a:hover{
+    font-weight: bold;
+    color: aliceblue;
+    background-color: #033863;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
-.stack-icon a{
-    text-decoration: none;
-    color: black;
+.tooltip-inner {
+    max-width: 25rem !important;
+    height: 38rem !important;
+    color: #4FCAFF !important;
+    background-color: rgba(2, 45, 80, .75) !important;
+    border-radius: 5% !important;
+    padding: 1rem !important;
+    display: flex !important;
+    align-items: center !important;
 }
 
+.tooltip-arrow {
+    display: none !important;
+}
+
+
+#front-end-tooltip{
+    font-size: 1.5rem;
+    width: 25rem;
+    height: 38rem;
+}
+
+#back-end-tooltip{
+    font-size: 1.5rem;
+    width: 25rem;
+    height: 38rem;
+}

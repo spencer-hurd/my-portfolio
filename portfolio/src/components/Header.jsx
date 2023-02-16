@@ -17,15 +17,18 @@ const Header = () => {
     <header>   
         <Navbar>
         <div className="title">
-            <Navbar.Brand id="header-name" href="/home">Spencer Hurd</Navbar.Brand>
-            <br/>
-            <Navbar.Text><b className="header-title">Full Stack Software Engineer</b>
-            <div className="socials">
-                <a href="https://www.github.com/spencer-hurd" target={"_blank"}><AiOutlineGithub /></a>
-                <b>||</b>
-                <a href="https://www.linkedin.com/in/spencerhurd" target={"_blank"}><AiFillLinkedin /></a>
+            <img id="logo" src="src/assets/sh-logo.png"/>    
+            <div className="header-text">
+                <Navbar.Brand id="header-name" href="/home">Spencer Hurd</Navbar.Brand>
+                <br/>
+                <Navbar.Text><b className="header-title">Full Stack Software Engineer</b>
+                <div className="socials">
+                    <a href="https://www.github.com/spencer-hurd" target={"_blank"}><AiOutlineGithub /></a>
+                    <b>||</b>
+                    <a href="https://www.linkedin.com/in/spencerhurd" target={"_blank"}><AiFillLinkedin /></a>
+                </div>
+                </Navbar.Text>
             </div>
-            </Navbar.Text>
         </div>
        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

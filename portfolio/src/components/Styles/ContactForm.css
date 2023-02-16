@@ -1,21 +1,43 @@
 #contact-form{
     display: flex;
     flex-direction: column;
-    background-color: aliceblue;
-    padding: 5rem;
+    background-color: #FF5036;
+    border-radius: 5%;
+    padding: 2rem;
     width: fit-content;
 }
 
 .contact-field{
     width: 15rem;
+    background-color: aliceblue;
+    border: .1rem dashed #033863;
+    border-radius: 5%;
 }
 
 #message{
     height: 15rem;
     width: 30rem;
+    background-color: aliceblue;
+    border: .1rem dashed #033863;
+    border-radius: 5%;
+
 }
 
 #submit-button{
     margin-top: 1rem;
     width: 10rem;
 }
+#submit-button{
+    font-size: 1.25rem;
+    border-radius: 5%;
+    margin-top: 1rem;
+    background-color: #4FCAFF;
+    color: #022D50;
+    border: 1px solid #022D50;
+  }
+  
+  #submit-button:hover{
+    color: aliceblue;
+    background-color: #033863;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  }

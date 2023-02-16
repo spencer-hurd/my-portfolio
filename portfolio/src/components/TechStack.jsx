@@ -1,8 +1,12 @@
-import { BsFillBootstrapFill } from "react-icons/bs";
+import Button from 'react-bootstrap/Button';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 import { AiFillHtml5 } from "react-icons/ai";
+import { BsFillBootstrapFill } from "react-icons/bs";
 import { IoLogoCss3, IoLogoReact, IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
-import './Styles/TechStack.css'
 import { SiExpress, SiPostgresql, SiJson, SiVite } from "react-icons/si";
+import './Styles/TechStack.css'
+import {Sticky, StickyContainer} from 'react-sticky'
 
 const TechStack = () => {
     return(
@@ -11,27 +15,57 @@ const TechStack = () => {
                 <hr />
                 <p className="tech-desc">These are the current languages, frameworks, libraries, and tools I utilize most in creating applications.</p>
                 <div className="stacks">
+                    <StickyContainer>
+                    <OverlayTrigger
+                        key='left'
+                        placement='left'
+                        overlay={
+                           
+                            <Sticky>{({ style }) => 
+                            <Tooltip style={style} container='body' id='front-end-tooltip' className="stack-tooltip">
+                                Front-end development is the process of creating the
+                                visuals and interactions of a website or web application.
+                                It is the user-facing side of development and is responsible
+                                for the look, feel, and functionality of a website. Front-end
+                                development typically involves HTML, CSS, and JavaScript, as
+                                well as frameworks such as React.js and Bootstrap. These tools
+                                allow developers to create dynamic, interactive web experiences
+                                that look great and are easy to use.
+                            </Tooltip>
+                            }</Sticky>
+                        }
+                        >
+                        <ul variant="secondary" className="full-stack">
+                        <h5 className="tech-h5">Front-end</h5>
+                        <hr/>
+                            <li className="stack-icon">
+                            <a href="https://html.com/" target={"_blank"}><AiFillHtml5 /> HTML5</a>
+                            </li>
+                            <li className="stack-icon">
+                            <a href="https://www.w3.org/Style/CSS/Overview.en.html" target={"_blank"}><IoLogoCss3 /> CSS</a>
+                            </li>
+                            <li className="stack-icon">
+                            <a href="https://www.javascript.com/" target={"_blank"}><IoLogoJavascript/> Javascript</a>
+                            </li>
+                            <li className="stack-icon">
+                            <a href="https://reactjs.org/" target={"_blank"}><IoLogoReact /> React.js</a>
+                            </li>
+                            <li className="stack-icon">
+                            <a href="https://react-bootstrap.github.io/" target={"_blank"}><BsFillBootstrapFill /> Bootstrap</a>
+                            </li>
+                        </ul>
+                    </OverlayTrigger>
+                    </StickyContainer>
+                <OverlayTrigger
+                    key='right'
+                    placement='right'
+                    overlay={
+                        <Tooltip container='body' id='back-end-tooltip' className="stack-tooltip">
+                            Back-end development is the process of creating the server-side of a website or web application. It is responsible for the data layer (storing and retrieving information) and the server-side logic (processing requests and responses). Back-end development typically involves Node.js, Express.js, PostgreSQL, JSON, and Vite. These tools allow developers to create powerful applications with high performance and scalability.
+                        </Tooltip>
+                    }>
                     <ul className="full-stack">
-                    <h5 className="tech-h5">Frontend</h5>
-                    <hr/>
-                        <li className="stack-icon">
-                        <a href="https://html.com/" target={"_blank"}><AiFillHtml5 /> HTML5</a>
-                        </li>
-                        <li className="stack-icon">
-                        <a href="https://www.w3.org/Style/CSS/Overview.en.html" target={"_blank"}><IoLogoCss3 /> CSS</a>
-                        </li>
-                        <li className="stack-icon">
-                        <a href="https://www.javascript.com/" target={"_blank"}><IoLogoJavascript/> Javascript</a>
-                        </li>
-                        <li className="stack-icon">
-                        <a href="https://reactjs.org/" target={"_blank"}><IoLogoReact /> React.js</a>
-                        </li>
-                        <li className="stack-icon">
-                        <a href="https://react-bootstrap.github.io/" target={"_blank"}><BsFillBootstrapFill /> Bootstrap</a>
-                        </li>
-                    </ul>
-                    <ul className="full-stack">
-                    <h5 className="tech-h5">Backend</h5>
+                    <h5 className="tech-h5">Back-end</h5>
                     <hr/>
                         <li className="stack-icon">
                         <a href="https://nodejs.org/en/" target={"_blank"}><IoLogoNodejs /> Node.js</a>
@@ -49,6 +83,7 @@ const TechStack = () => {
                         <a href="https://vitejs.dev/" target={"_blank"}><SiVite/> Vite</a>
                         </li>
                     </ul>
+                </OverlayTrigger>
                 </div>
             </div>
     )

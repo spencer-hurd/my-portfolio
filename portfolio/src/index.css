@@ -1,11 +1,19 @@
+
 .App{
   margin-left: 5%;
   margin-right: 5%;
   padding: 12px;
 }
 
+*{
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 body{ 
-  margin-top: 10%
+  background-color: aliceblue;
+  margin-top: 8em;
+  color: #033863;
+  position: relative;
 }
 
 footer{
@@ -13,20 +21,32 @@ footer{
   left: 0;
   right: 0;
   position: static;
-  background-color: lightblue;
+  background-color: #4FCAFF;
+  font-size: 1.25rem;
 }
 .footer-nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column
+  flex-direction: column;
+  text-decoration: none;
+  color: #022D50
+}
+
+.footer-nav a.nav-link {
+  color: #022D50
+
+}
+
+.icons svg{
+  color:#FF5036
 }
 
 header{
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: red;
+  background-color: #FF5036;
   height:fit-content;
   display: flex;
   padding-left: 6%;
@@ -35,26 +55,55 @@ header{
 }
 
 nav {
-left:0;
-right: 0;
-position: sticky;
-margin: 0;
+  left:0;
+  right: 0;
+  position: sticky;
+  margin: 0;
 }
 
+#logo{
+  height: 5rem;
+  top: 0;
+  position: sticky;
+  margin-bottom: .5rem;
+}
 
 #header-name{
+  color: #4FCAFF;
   font-size: 2rem;
+  font-weight: bold;
+  
 }
 
-.header-links{
+.header-links a{
   font-size: 1.25rem;
   right: 0;
+  color:#033863
 }
-
 .title{
-  font-size: 1.25rem;
+  margin-top: .5rem;
+  display: flex;
 }
 
+.header-text{
+  margin-top: .5rem;
+  margin-left: .5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: .5rem;
+}
+.header-title{
+  font-size: 1.25rem;
+  color: #033863;
+}
+.socials{
+  color: #4FCAFF;
+  margin-top: .5rem;
+
+}
+.socials a{
+  color:#033863
+}
 
 .navbar-collapse{
   flex-grow: 0;
@@ -62,6 +111,30 @@ margin: 0;
 
 .navbar-expand{
   width: 100%;
+  justify-content: space-between;
 }
 
+.home-intro{
+  font-size: 1.25rem;
+}
 
+.intro{
+  font-size: 2rem;
+}
+
+#resume-button{
+  width: fit-content;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #4FCAFF;
+  color: #022D50;
+  border: 1px solid #022D50;
+  border-radius: 5%;
+
+}
+
+#resume-button:hover{
+  color: aliceblue;
+  background-color: #033863;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}

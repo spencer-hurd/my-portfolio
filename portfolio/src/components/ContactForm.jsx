@@ -9,7 +9,7 @@ const ContactForm = () => {
   }
   return (
     <form id="contact-form" onSubmit={handleSubmit}>
-        <h3>Contact Me:</h3>
+        <h3 className='h-3'>Contact Me:</h3>
         <label htmlFor="email">
             Email Address: 
         </label>
