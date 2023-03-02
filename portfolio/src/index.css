@@ -1,117 +1,155 @@
-
-.App{
-  margin-left: 5%;
-  margin-right: 5%;
-  padding: 12px;
+@media only screen and (max-width: 768px) {
+  .App {
+    /* background-color: blue; */
+  }
 }
 
-*{
-  font-family: 'Space Grotesk', sans-serif;
+@media only screen and (min-width: 768px) {
+  .App {
+    /* background-color: red; */
+    padding: 12px;
+  }
+  header {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
-.h-3{
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.h-3 {
   font-size: 1.25rem;
 }
 
-body{ 
+body {
   background-color: aliceblue;
   margin-top: 8em;
   color: #033863;
   position: relative;
 }
 
-.intro-container{
+/* HOME PAGE */
+
+.home-page {
+  font-size: 1rem;
+}
+
+.intro {
+  font-size: 1.5rem;
+}
+
+#resume-button {
+  width: 9.5rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  background-color: #4fcaff;
+  color: #022d50;
+  border: 1px solid #022d50;
+  border-radius: 2%;
+}
+
+.intro-container {
   display: flex;
   flex-direction: column;
 }
 
-.intro-container p{
-width: auto;
+.intro-container p {
+  width: auto;
 }
 
-.intro-container a{
+.intro-container a {
   width: min-content;
   height: min-content;
 }
 
-.home-page{
+.home-page {
   display: flex;
   flex-direction: column;
 }
 
-.home-intro{
+.home-intro {
   display: flex;
   flex-direction: row;
 }
 
-#first-section:hover h3{
+#first-section:hover h3 {
   font-weight: bold;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-  color: #FF5036;
-  text-shadow: .5px .5px .5px rgba(0, 0, 0, .2);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  color: #ff5036;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
 }
 
-
-.tech-stack:hover h3{
-  color: #FF5036;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+.tech-stack:hover h3 {
+  color: #ff5036;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
   font-weight: bold;
-  text-shadow: .5px .5px .5px rgba(0, 0, 0, .2);
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
 }
 
-.project-section:hover h3{
-  color: #FF5036;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+.project-section:hover h3 {
+  color: #ff5036;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
   font-weight: bold;
-  text-shadow: .5px .5px .5px rgba(0, 0, 0, .2);
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
 }
 
+/* FOOTER */
 
-footer{
+footer {
   bottom: 0;
   left: 0;
   right: 0;
   position: absolute;
-  background-color: #4FCAFF;
-  width:auto;
+  background-color: #4fcaff;
+  width: auto;
   height: 2rem;
   max-width: 200%;
-  font-size: .9rem;
-  line-height: .75rem;
+  font-size: 0.9rem;
+  line-height: 0.75rem;
 }
-.footer-nav{
+.footer-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   text-decoration: none;
-  color: #022D50
+  color: #022d50;
 }
 
 .footer-nav a.nav-link {
-  color: #022D50;
+  color: #022d50;
 }
 
 .footer-nav a.nav-link:hover {
-  color: #FF5036;
+  color: #ff5036;
 }
 
-.icons svg{
+.icons svg {
   font-size: 1.25rem;
-  color:#FF5036
+  color: #ff5036;
 }
 
-.icons svg:hover{
-  color:#022D50;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+.icons svg:hover {
+  color: #022d50;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
 
-header{
+/* HEADER */
+
+header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #FF5036;
-  height:5rem;
+  background-color: #ff5036;
+  height: 5rem;
   display: flex;
   padding-left: 6%;
   padding-right: 6%;
@@ -119,103 +157,89 @@ header{
 }
 
 nav {
-  left:0;
+  left: 0;
   right: 0;
   position: sticky;
   margin: 0;
 }
 
-#logo{
+#logo {
   height: 4rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   top: 0;
   position: sticky;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-#header-name{
-  color: #4FCAFF;
+#header-name {
+  color: #4fcaff;
   font-size: 1.25rem;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
   font-weight: bold;
   margin-bottom: -0.25rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
-
-.header-links a{
-  font-size: 1rem;
+.header-links {
   right: 0;
-  color:rgb(3, 56, 99)
+}
+.header-link {
+  font-size: 1rem;
+  color: rgb(3, 56, 99);
+  background-color: #ff5036;
+  text-decoration: none;
+  border: none;
 }
 
-.header-links a:hover{
-  color: #4FCAFF;
+.header-link:hover {
+  color: #4fcaff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
 
-.title{
+.title {
   display: flex;
 }
 
-.header-text{
-  margin-left: .5rem;
+.header-text {
+  margin-left: 0.5rem;
   display: flex;
   flex-direction: column;
-  line-height: .5rem;
+  line-height: 0.5rem;
 }
-.header-title{
-  font-size: .9rem;
+.header-title {
+  font-size: 0.9rem;
   color: #033863;
 }
-.socials{
-  color: #4FCAFF;
-  margin-top: .5rem;
+.socials {
+  color: #4fcaff;
+  margin-top: 0.5rem;
 }
-.socials a{
-  color:#033863;
+.socials a {
+  color: #033863;
   font-size: 1.25rem;
 }
 
-.socials a:hover{
-  color:#4FCAFF;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+.socials a:hover {
+  color: #4fcaff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
 
-.navbar-collapse{
+.navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-expand{
+.navbar-expand {
   width: 100%;
   justify-content: space-between;
 }
 
-.home-page{
-  font-size: 1rem;
-}
-
-.intro{
-  font-size: 1.5rem;
-}
-
-#resume-button{
-  width: 9.5rem;
-  margin: 0;
-  margin-bottom: .5rem;
-  font-size: .75rem;
-  background-color: #4FCAFF;
-  color: #022D50;
-  border: 1px solid #022D50;
-  border-radius: 2%;
-  
-}
-
-.home-intro:hover #resume-button{
+.home-intro:hover #resume-button {
   text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
 }
 
-#resume-button:hover{
+#resume-button:hover {
   color: aliceblue;
   background-color: #033863;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
-

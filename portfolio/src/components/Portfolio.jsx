@@ -12,6 +12,8 @@ import st1 from '../assets/project-vids/st1.mp4'
 import st2 from '../assets/project-vids/st2.mp4'
 import st3 from '../assets/project-vids/st3.mp4'
 import {AiOutlineGithub} from "react-icons/ai"
+import {SiNetlify} from "react-icons/si";
+
 
 
 const Portfolio = () => {
@@ -22,7 +24,8 @@ const Portfolio = () => {
             <hr/>
             <div className="portfolio-project">
                 <b className="portfolio-name">3D-Glasses 
-                <a href="https://www.github.com/spencer-hurd" target={"_blank"} className="git-link"><AiOutlineGithub /></a>
+                <a href="https://github.com/grace-shopper-7/3d-glasses" target={"_blank"} className="git-link"><AiOutlineGithub /></a>
+                <a href="https://github.com/spencer-hurd/UNIV_FitnessTrackr_Starter" target={"_blank"} className="git-link"><SiNetlify/></a>
                 </b>
                 <p className='portfolio-desc'>3D Glasses is an ecommerce website</p>
             <div className="portfolio-content">
@@ -51,7 +54,8 @@ const Portfolio = () => {
             <hr/>
             <div className="portfolio-project">
                 <b className="portfolio-name">Fitness Trac.kr
-                <a href="https://www.github.com/spencer-hurd" target={"_blank"} className="git-link"><AiOutlineGithub /></a>
+                <a href="https://github.com/spencer-hurd/UNIV_FitnessTrackr_Starter" target={"_blank"} className="git-link"><AiOutlineGithub /></a>
+                <a href="https://github.com/spencer-hurd/UNIV_FitnessTrackr_Starter" target={"_blank"} className="git-link"><SiNetlify/></a>
                 </b>
                 <p className='portfolio-desc'>Fitness Trac.kr is an application designed
                 for users to track their workout routines. This full stack web application
@@ -103,7 +107,8 @@ const Portfolio = () => {
             <hr/>
             <div className="portfolio-project">
                 <b className="portfolio-name">Stranger's Things
-                <a href="https://www.github.com/spencer-hurd" target={"_blank"} className="git-link"><AiOutlineGithub /></a>
+                <a href="https://github.com/spencer-hurd/StrangerThings" target={"_blank"} className="git-link"><AiOutlineGithub /></a>
+                <a href="https://strangers-things-website.netlify.app" target={"_blank"} className="git-link"><SiNetlify/></a>
                 </b>
                 <p className="portfolio-desc">       
                 Stranger's Things is a trade website blahb abhfsbdfhsba
