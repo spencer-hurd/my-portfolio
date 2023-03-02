@@ -1,9 +1,24 @@
 .project-pic{
     background-color: #FF5036;
-    height: 20rem;
-    width: 40rem;
-    border-radius: 5%;
-    padding: .5rem;
+    width: 30rem;
+    height: fit-content;
+    padding: .25rem;
+    border-radius: 2%;
+    margin-bottom: 2rem;
+}
+.project-pic:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.name-and-pic{
+    display: flex;
+    flex-direction: column;
+}
+.project{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 3rem;
 }
 
 .pic-desc{
@@ -12,16 +27,30 @@
 
 .project-desc{
     padding-left: 2rem;
-    height: 20rem;
-    width: 40rem;
+    height: auto;
+    max-height: 25rem;
+    width: max-content;
+    min-width: 15rem;
+    max-width: 30rem;
+    color:#FF5036 ;
+    margin-left: 1.75rem;
+    background-color: rgba(79, 202, 255, .2);
+    border-radius: 2% ;
+    margin-bottom: 0;
+    padding: 1rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
 }
 
 .project-name{
     font-size: 1.5rem;
 }
 
-.h-3{
-    font-size: 2rem;
+.project:hover .project-name{
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
+
 
 

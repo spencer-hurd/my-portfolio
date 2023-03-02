@@ -6,28 +6,30 @@
 .stacks{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .full-stack{
     background-color: #FF5036;
-    border-radius: 5%;
+    border-radius: 2%;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 1rem;
     margin: 1rem;
-    padding: 2rem;
-    font-size: 1.5rem;
-    height: 38rem;
-    width: 25rem;
+    height: 22rem;
+    width: 16rem;
     display: flex;
+    position: static;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex;
     align-items: center;
-    position: relative;
-}
-.full-stack.tooltip{
-    position: fixed !important;
 }
 
 .full-stack:hover{
-    border: .25rem dashed #4FCAFF;
+    box-sizing: border-box;
+    height: 22rem;
+    width: 16rem;
+    border: .2rem dashed #4FCAFF;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 
 }
@@ -37,15 +39,16 @@
 } 
 
 .tech-h5{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    margin-bottom: -1rem;
 }
 
 
 .h-3{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #4FCAFF
 }
 .stack-icon{
@@ -53,14 +56,15 @@
 }
 .stack-icon a{
     background-color: #4FCAFF;
-    border-radius: 5%;
-    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 2%;
+    margin-bottom: .2rem;
     display: flex;
-    font-size: 1.5rem;
-    width: 15rem;
+    font-size: 1rem;
+    width: 10rem;
     flex-direction: column;
-    padding: .5rem;
-    justify-content: center;
+    padding: .2rem;
     align-items: center;
     text-decoration: none;
     color: #022D50;
@@ -74,30 +78,34 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
-.tooltip-inner {
-    max-width: 25rem !important;
-    height: 38rem !important;
-    color: #4FCAFF !important;
-    background-color: rgba(2, 45, 80, .75) !important;
-    border-radius: 5% !important;
-    padding: 1rem !important;
-    display: flex !important;
-    align-items: center !important;
+.blurb{
+    width: 16rem;
+    height: 22rem;
+    /* max-height: 30rem; */
+    max-width: 18rem;
+    color:#FF5036 ;
+    background-color: rgba(79, 202, 255, .2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4); */
+    border-radius: 2% ;
+    padding: 1rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
 }
 
-.tooltip-arrow {
-    display: none !important;
+#backend-blurb{
+    position: absolute;
+    margin-left: 55rem;
+    margin-top: .5rem;
+}
+
+#frontend-blurb{
+    position: absolute;
+    margin-right: 55rem;
+    margin-top: .5rem;
 }
 
 
-#front-end-tooltip{
-    font-size: 1.5rem;
-    width: 25rem;
-    height: 38rem;
-}
 
-#back-end-tooltip{
-    font-size: 1.5rem;
-    width: 25rem;
-    height: 38rem;
-}
+

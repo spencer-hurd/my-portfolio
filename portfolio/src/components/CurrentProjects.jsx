@@ -2,30 +2,27 @@ import './Styles/CurrentProjects.css'
 
 const CurrentProjects = () => {
     return (
-        <div>
-            <h3 className='h-3'>Current Projects:</h3>
+        <div className='project-section'>
+            <h3 className='h-3'>Current Project(s):</h3>
             <hr />
             <p>Here's what I'm currently working on.</p>
             <div className="project">
-                <b className="project-name">Project Name</b>
-                <div className="pic-desc">
-                    <p className="project-pic">Project Screenshot</p>
-                    <p className="project-desc">
-                        The description for the website I'm currently working on.
-                        There's nothing to put here right now, but I'm thinking of adding
-                        several photos of wireframing and concept art.
-                    </p>
+                <div className="name-and-pic">
+                    <b className="project-name">ALPHABETRON</b>
+                    <img className='project-pic' src='/src/assets/Alphabetron.png'/>
                 </div>
-            </div>
-            <div className="project">
-                <b className="project-name">Project Name</b>
                 <div className="pic-desc">
-                <p className="project-pic">Project Screenshot</p>
-                <p className="project-desc">
-                    The description for the website I'm currently working on.
-                    There's nothing to put here right now, but I'm thinking of adding
-                    several photos of wireframing and concept art.
-                </p>
+                    <p className="project-desc">
+                    ALPHABETRON is an 8-bit themed word game where players must 
+                    make as many words as possible within a set time limit. 
+                    The game is level-based and has a winning word for each 
+                    round that must be used to progress. In addition, players 
+                    have five lives which can be lost by re-entering words 
+                    already declared incorrect or already played. Every 10 levels, 
+                    lives are restored. I'm currently developing this game with React, 
+                    striving to create a captivating, level-based word game that 
+                    challenges players with every round.
+                    </p>
                 </div>
             </div>
         </div>

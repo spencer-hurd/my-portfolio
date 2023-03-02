@@ -1,0 +1,45 @@
+.portfolio-pic{
+    background-color: lightblue;
+    height: 15.75rem;
+    width: 28rem;
+    margin: .75rem
+
+}
+.portfolio-aside{
+    height: 15.75rem;
+    width:  28rem;
+    margin: .75rem
+}
+.portfolio-project{
+    display: flex;
+    flex-direction: column;
+}
+.portfolio-sect{
+    display: flex;
+    flex-direction: row;
+    margin: .75rem;
+}
+.portfolio-name{
+    font-size: 1.25rem;
+}
+.portfolio-content{
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    flex-direction: column;
+}
+.git-link{
+    font-size: 1.25rem;
+    right: 0;
+    color:rgb(3, 56, 99);
+    margin-left: .25rem;
+}
+
+.git-link:hover{
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    color: #4FCAFF;
+  }
+.pb{
+    width: 100%;
+    height: 5rem;
+}
