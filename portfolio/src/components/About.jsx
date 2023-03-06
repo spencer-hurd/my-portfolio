@@ -7,7 +7,7 @@ const About = () => {
             <h3>About Me</h3>
             <hr />
             <AboutPhotos />
-                <div className="aboutsection">
+                <div className="aboutsection section">
                     <p>
                         I am Spencer, a full-stack software engineer passionate about creating innovative
                         and impactful projects. After completing a 12-week bootcamp immersive through the

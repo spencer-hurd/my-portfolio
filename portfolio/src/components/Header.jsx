@@ -1,5 +1,6 @@
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 import Nav from "react-bootstrap/Nav";
+import Button from "react-bootstrap/Button";
 import Navbar from "react-bootstrap/Navbar";
 import React, { useState } from "react";
 import ReactModal from "react-modal";
@@ -13,66 +14,80 @@ const Header = () => {
     setIsOpen(false);
   };
   return (
-    <div>
-      <header>
-        <Navbar>
-          <div className="title">
+    <Navbar
+      collapseOnSelect="true"
+      key="md"
+      id="header"
+      sticky="top"
+      expand="md"
+    >
+      <div className="title">
+        <div className="header-text">
+          <Navbar.Brand href="/">
             <a href="/">
               <img id="logo" src="src/assets/sh-logo.png" />{" "}
             </a>
-            <div className="header-text">
-              <Navbar.Brand id="header-name" href="/">
-                Spencer Hurd
-              </Navbar.Brand>
-              <br />
-              <Navbar.Text>
-                <b className="header-title">Full Stack Software Engineer</b>
-                <div className="socials">
-                  <a
-                    href="https://www.github.com/spencer-hurd"
-                    target={"_blank"}
-                  >
-                    <AiOutlineGithub />
-                  </a>
-                  <b>||</b>
-                  <a
-                    href="https://www.linkedin.com/in/spencerhurd"
-                    target={"_blank"}
-                  >
-                    <AiFillLinkedin />
-                  </a>
-                </div>
-              </Navbar.Text>
+          </Navbar.Brand>
+          <Navbar.Text>
+            <div className="name-div">
+              <b id="header-name">Spencer Hurd</b>
+              <div className="socials">
+                <a href="https://www.github.com/spencer-hurd" target={"_blank"}>
+                  <AiOutlineGithub />
+                </a>
+                <b>||</b>
+                <a
+                  href="https://www.linkedin.com/in/spencerhurd"
+                  target={"_blank"}
+                >
+                  <AiFillLinkedin />
+                </a>
+              </div>
             </div>
-          </div>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto header-links">
-              <Nav.Link className="header-link" href="/">
-                Home
-              </Nav.Link>
-              <Nav.Link className="header-link" href="/about">
-                About
-              </Nav.Link>
-              <Nav.Link className="header-link" href="/portfolio">
-                Portfolio
-              </Nav.Link>
-              <button className="header-link" onClick={openModal}>
-                Contact Me
-              </button>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </header>
-      <ReactModal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        className={"contact-modal"}
-        overlayClassName="contact-overlay"
-        contentLabel="Contact Form Modal"
+            <br />
+            <b className="header-title">Full Stack Software Engineer</b>
+          </Navbar.Text>
+        </div>
+      </div>
+      <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
+      <Navbar.Offcanvas
+        id={`offcanvasNavbar-expand-md`}
+        aria-labelledby={`offcanvasNavbarLabel-expand-md`}
+        placement="end"
       >
-        <ContactForm closeModal={closeModal} />
-      </ReactModal>
-    </div>
+        {" "}
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto header-links">
+            <Nav.Link eventKey="1" className="header-link" href="/">
+              Home
+            </Nav.Link>
+            <Nav.Link eventKey="2" className="header-link" href="/about">
+              About
+            </Nav.Link>
+            <Nav.Link eventKey="3" className="header-link" href="/portfolio">
+              Portfolio
+            </Nav.Link>
+            <Nav.Link
+              eventKey="4"
+              className="header-link nav-link"
+              onClick={openModal}
+            >
+              Contact Me
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        <ReactModal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          className={"contact-modal"}
+          overlayClassName="contact-overlay"
+          contentLabel="Contact Form Modal"
+          id="contact-modal"
+        >
+          <ContactForm closeModal={closeModal} />
+        </ReactModal>
+      </Navbar.Offcanvas>
+    </Navbar>
   );
 };
 

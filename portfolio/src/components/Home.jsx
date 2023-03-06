@@ -4,10 +4,9 @@ import TechStack from "./TechStack";
 const Home = ({ contactFormRef }) => {
   return (
     <div className="home-page">
-      <div id="first-section">
+      <div id="first-section" className="section">
         <h3 className="h-3">Introducing Myself:</h3>
         <hr />
-        {/* <div className="home-intro"> */}
         <div className="intro-container">
           <p>
             Welcome to my website! I'm Spencer Hurd, a full stack software
@@ -28,10 +27,10 @@ const Home = ({ contactFormRef }) => {
         {/* <ContactForm contactFormRef={contactFormRef}/> */}
         {/* </div> */}
       </div>
-      <div className="stack-section">
+      <div className="stack-section section">
         <TechStack />
       </div>
-      <div className="project-section">
+      <div className="project-section section">
         <CurrentProjects />
       </div>
     </div>
