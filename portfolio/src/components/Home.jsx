@@ -1,6 +1,6 @@
 import CurrentProjects from "./CurrentProjects";
 import TechStack from "./TechStack";
-
+import "./Styles/Home.css";
 const Home = ({ contactFormRef }) => {
   return (
     <div className="home-page">

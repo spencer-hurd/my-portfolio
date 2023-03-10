@@ -1,45 +1,116 @@
-.portfolio-pic{
-    background-color: lightblue;
-    height: 15.75rem;
-    width: 28rem;
-    margin: .75rem
+.portfolio-pic {
+  background-color: lightblue;
+  height: 12.25rem;
+  width: 21.8rem;
+  margin: 0.75rem;
+}
+.portfolio-aside {
+  height: fit-content;
+  width: fit-content;
+  margin: 0.75rem;
+}
+.portfolio-project {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-sect {
+  display: flex;
+  flex-direction: row;
+  margin: 0.75rem;
+  width: fit-content;
+  border-top: dashed 2px #4fcaff;
+}
+.portfolio-name {
+  font-size: 1.25rem;
+}
+.portfolio-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.git-link {
+  font-size: 1.25rem;
+  right: 0;
+  color: rgb(3, 56, 99);
+  margin-left: 0.25rem;
+}
 
+.git-link:hover {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  color: #4fcaff;
 }
-.portfolio-aside{
-    height: 15.75rem;
-    width:  28rem;
-    margin: .75rem
+.pb {
+  width: 100%;
+  height: 5rem;
 }
-.portfolio-project{
-    display: flex;
-    flex-direction: column;
-}
-.portfolio-sect{
-    display: flex;
-    flex-direction: row;
-    margin: .75rem;
-}
-.portfolio-name{
+
+@media only screen and (max-width: 768px) {
+  #portfolio {
+    padding: 1rem;
+  }
+
+  .page-name {
     font-size: 1.25rem;
-}
-.portfolio-content{
+  }
+
+  .page-desc {
+    font-size: 0.75rem;
+  }
+
+  .portfolio-pic {
+    background-color: none;
+    height: min-content;
+    width: 15rem;
+    margin: 0.75rem;
+  }
+  .portfolio-aside {
+    height: min-content;
+    max-width: 30rem;
+    margin: 0.75rem;
+  }
+  .portfolio-project {
     display: flex;
-    align-items: center;    
-    justify-content: space-between;
     flex-direction: column;
-}
-.git-link{
+  }
+
+  .portfolio-desc {
+    font-size: 0.75rem;
+  }
+
+  .portfolio-sect {
+    display: flex;
+    width: min-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.75rem;
+    font-size: 0.75rem;
+  }
+  .portfolio-name {
+    font-size: 1rem;
+  }
+  .portfolio-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .git-link {
     font-size: 1.25rem;
     right: 0;
-    color:rgb(3, 56, 99);
-    margin-left: .25rem;
-}
-
-.git-link:hover{
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    color: #4FCAFF;
+    color: rgb(3, 56, 99);
+    margin-left: 0.25rem;
   }
-.pb{
+
+  .git-link:hover {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out;
+    color: #4fcaff;
+  }
+  .pb {
     width: 100%;
     height: 5rem;
+  }
 }

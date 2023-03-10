@@ -1,56 +1,108 @@
-.project-pic{
-    background-color: #FF5036;
-    width: 30rem;
-    height: fit-content;
-    padding: .25rem;
-    border-radius: 2%;
-    margin-bottom: 2rem;
+.project-pic {
+  background-color: #ff5036;
+  width: 30rem;
+  height: fit-content;
+  padding: 0.25rem;
+  border-radius: 2%;
+  margin-bottom: 2rem;
 }
-.project-pic:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+.project-pic:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
-.name-and-pic{
+.name-and-pic {
+  display: flex;
+  flex-direction: column;
+}
+.project {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.pic-desc {
+  display: flex;
+}
+
+.project-desc {
+  padding-left: 2rem;
+  height: auto;
+  max-height: 25rem;
+  width: max-content;
+  min-width: 15rem;
+  max-width: 30rem;
+  color: #ff5036;
+  margin-left: 1.75rem;
+  background-color: rgba(79, 202, 255, 0.2);
+  border-radius: 2%;
+  margin-bottom: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.project-name {
+  font-size: 1.5rem;
+}
+
+.project:hover .project-name {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 768px) {
+  .project-pic {
+    background-color: #ff5036;
+    width: 16rem;
+    height: fit-content;
+    padding: 0.25rem;
+    border-radius: 2%;
+    margin-bottom: 1rem;
+  }
+  .project-pic:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .name-and-pic {
     display: flex;
     flex-direction: column;
-}
-.project{
+  }
+  .project {
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
     margin-bottom: 3rem;
-}
+  }
 
-.pic-desc{
+  .pic-desc {
     display: flex;
-}
+  }
 
-.project-desc{
+  .project-desc {
     padding-left: 2rem;
     height: auto;
     max-height: 25rem;
-    width: max-content;
-    min-width: 15rem;
-    max-width: 30rem;
-    color:#FF5036 ;
-    margin-left: 1.75rem;
-    background-color: rgba(79, 202, 255, .2);
-    border-radius: 2% ;
+    width: 16rem;
+    color: #ff5036;
+    margin-left: 0rem;
+    background-color: rgba(79, 202, 255, 0.2);
+    border-radius: 2%;
     margin-bottom: 0;
-    padding: 1rem ;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: .9rem;
-}
+    font-size: 0.75rem;
+  }
 
-.project-name{
+  .project-name {
     font-size: 1.5rem;
-}
+  }
 
-.project:hover .project-name{
+  .project:hover .project-name {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  }
 }
-
-
-

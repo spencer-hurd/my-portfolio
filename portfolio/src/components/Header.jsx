@@ -1,10 +1,10 @@
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 import Nav from "react-bootstrap/Nav";
-import Button from "react-bootstrap/Button";
 import Navbar from "react-bootstrap/Navbar";
 import React, { useState } from "react";
 import ReactModal from "react-modal";
 import ContactForm from "./ContactForm";
+import "./Styles/Header.css";
 const Header = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const openModal = () => {
@@ -18,15 +18,13 @@ const Header = () => {
       collapseOnSelect="true"
       key="md"
       id="header"
-      sticky="top"
+      fixed="top"
       expand="md"
     >
       <div className="title">
         <div className="header-text">
           <Navbar.Brand href="/">
-            <a href="/">
-              <img id="logo" src="src/assets/sh-logo.png" />{" "}
-            </a>
+            <img id="logo" src="src/assets/sh-logo.png" />{" "}
           </Navbar.Brand>
           <Navbar.Text>
             <div className="name-div">
