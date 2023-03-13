@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import ReactModal from "react-modal";
 import ContactForm from "./ContactForm";
 import "./Styles/Header.css";
+import logo from "/src/assets/sh-logo.png";
 const Header = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const openModal = () => {
@@ -24,7 +25,7 @@ const Header = () => {
       <div className="title">
         <div className="header-text">
           <Navbar.Brand href="/">
-            <img id="logo" src="src/assets/sh-logo.png" />{" "}
+            <img id="logo" src={logo} />{" "}
           </Navbar.Brand>
           <Navbar.Text>
             <div className="name-div">

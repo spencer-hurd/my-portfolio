@@ -24,8 +24,6 @@ const Home = () => {
             <button id="resume-button">Download Resume PDF</button>
           </a>
         </div>
-        {/* <ContactForm contactFormRef={contactFormRef}/> */}
-        {/* </div> */}
       </div>
       <div className="stack-section section">
         <TechStack />
