@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import headshot from "/src/assets/headshot.JPG";
+import headshot from "/src/assets/headshot.jpg";
 import ryanAndI from "/src/assets/ryanandi.jpg";
 import circuit from "/src/assets/sircat.png";
 import wylieBylie from "/src/assets/WylieBylie.jpg";
