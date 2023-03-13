@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import headshot from "/src/assets/headshot.jpg";
-import ryanAndI from "/src/assets/ryanandi.jpg";
+import headshot from "/src/assets/headshot.png";
+import ryanAndI from "/src/assets/ryanandi.png";
 import circuit from "/src/assets/sircat.png";
-import wylieBylie from "/src/assets/WylieBylie.jpg";
-import grogu from "/src/assets/Grogy.jpg";
+import wylieBylie from "/src/assets/WylieBylie.png";
+import grogu from "/src/assets/Grogy.png";
 
 export default class AboutPhotos extends Component {
   render() {
