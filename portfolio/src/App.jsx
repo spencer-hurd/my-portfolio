@@ -3,14 +3,12 @@ import {
   createRoutesFromElements,
   RouterProvider,
   Route,
-  Routes,
 } from "react-router-dom";
 import About from "./components/About";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
-import { useState } from "react";
 
 const App = () => {
   const router = createBrowserRouter(

@@ -55,7 +55,7 @@
 @media only screen and (max-width: 768px) {
   .project-pic {
     background-color: #ff5036;
-    width: 16rem;
+    width: 20rem;
     height: fit-content;
     padding: 0.25rem;
     border-radius: 2%;
@@ -84,8 +84,9 @@
   .project-desc {
     padding-left: 2rem;
     height: auto;
-    max-height: 25rem;
-    width: 16rem;
+    width: auto;
+    max-height: 20rem;
+    max-width: 20rem;
     color: #ff5036;
     margin-left: 0rem;
     background-color: rgba(79, 202, 255, 0.2);
@@ -95,11 +96,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.75rem;
+    font-size: auto;
   }
 
   .project-name {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    align-self: center;
   }
 
   .project:hover .project-name {

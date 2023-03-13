@@ -44,7 +44,9 @@
 .caption {
   font-size: 0.75rem;
 }
-
+#abt-h3 {
+  padding-left: 5%;
+}
 .aside {
   display: flex !important;
   flex-direction: column;
@@ -54,56 +56,50 @@
 
 .aboutsection {
   margin-bottom: 5rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.slick-next {
+  right: -15px !important;
+}
+
+.slick-prev {
+  left: -15px !important;
 }
 
 @media only screen and (max-width: 768px) {
-  #abt-h3 {
-    padding-left: 1rem;
-    font-size: 1rem;
-  }
-  #about {
+  .aboutsection {
     padding-bottom: 1rem;
-    font-size: smaller;
-  }
-  #photo-header {
-    font-size: 0.85rem;
-  }
-
-  .carousel img {
-    height: 6rem;
-    border-radius: 5%;
-  }
-  .carousel {
-    height: 8rem;
-    max-width: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    float: right;
-    padding: 0rem;
-    margin-left: 0rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
   }
 
   .aside {
     height: min-content;
   }
 
+  .carousel img {
+    height: 8rem;
+    border-radius: 5%;
+  }
+  .carousel {
+    height: 12rem;
+    max-width: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    padding: 1rem;
+    margin-left: 1rem;
+  }
   .caption {
-    padding-bottom: 0rem;
-    margin-bottom: 0rem;
-    font-size: smaller;
+    margin-bottom: 0;
   }
 
   .slick-next {
-    right: -5px !important;
-  }
-  .slick-prev {
-    left: -5px !important;
+    right: -15px !important;
   }
 
-  .slick-dots {
-    bottom: -15px !important;
+  .slick-prev {
+    left: -15px !important;
   }
 }

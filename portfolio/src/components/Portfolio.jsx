@@ -23,8 +23,8 @@ const Portfolio = () => {
         in developing:
       </p>
       <hr />
-      <div className="portfolio-project">
-        <b className="portfolio-name">
+      <div className="portfolio-project section">
+        <h3 className="portfolio-name">
           3D-Glasses
           <a
             href="https://github.com/grace-shopper-7/3d-glasses"
@@ -40,7 +40,7 @@ const Portfolio = () => {
           >
             <SiNetlify />
           </a>
-        </b>
+        </h3>
         <p className="portfolio-desc">
           3D Glasses is a model e-commerce website built around the concept of
           providing people with 3-D-printed glasses, offering frames that are
@@ -50,67 +50,66 @@ const Portfolio = () => {
           <div className="portfolio-sect">
             <video src={td1} controls="controls" className="portfolio-pic" />
             <p className="portfolio-aside">
-              If you do not already have an account, you will be directed to
-              register. To start registration, add in your unique email address,
-              followed by a username, and make sure you use a password of at
-              least 8 characters. Upon confirmation, you will be registered and
-              automatically signed in, and your username will show at the top
-              right corner of the page along with a signout button.
+              If a user does not already have an account, they will be directed
+              to register. Registration requires a unique email address,
+              followed by a username, and a password of at least 8 characters.
+              Upon confirmation, the user will be registered and automatically
+              signed in, and their username will show at the top right corner of
+              the page, along with a sign-out button.
             </p>
           </div>
           <div className="portfolio-sect">
             <video src={td2} controls="controls" className="portfolio-pic" />
             <p className="portfolio-aside">
-              On the Products page, a user can click "Add To Cart" to populate
-              specific products into their cart, and they will now display
-              inside the shopping cart modal. Each cart item has a delete button
-              to remove an item, and an edit quantity button where you can
-              insert a specific number, manually increment the quantity, or
-              click the add to cart button on the product to increase the cart
-              quantity as displayed here along with the updated total. The clear
-              cart button allows you to effectively empty the entire cart.
+              On the Products page, a user can click "Add To Cart" on specific
+              products to add them to their shopping cart, displayed in a side
+              modal. Each cart item has a delete button to remove an item, and
+              an edit quantity button where a user can insert a specific number,
+              manually increment the quantity, or click the add to cart button
+              on the product to increase the cart quantity as displayed here
+              along with the updated total. The clear cart button allows users
+              to effectively empty the entire cart.
             </p>
           </div>
           <div className="portfolio-sect">
             <video src={td3} controls="controls" className="portfolio-pic" />
             <p className="portfolio-aside">
-              If you scroll down you can click review order at the bottom of the
-              cart which takes you to a new page where you’re prompted to fill
-              out your shipping address and payment details in each of the
-              dropdown forms. The dropdown for the shipping address has the
-              standard input fields for your first name, last name, and address,
-              while the payment details require credit card information. You
-              also have the opportunity to enter the billing address if it is
-              different from the shipping address. Once all of the required
-              fields are filled, we can finally place the order!
+              To checkout, users can Review Order at the bottom of the cart
+              which navigates to a new page where they will be prompted to fill
+              out a shipping address and payment details in each of the dropdown
+              forms. You also have the opportunity to enter the billing address
+              if it is different from the shipping address. Once all of the
+              required fields are filled, the order can be placed.
             </p>
           </div>
           <div className="portfolio-sect">
             <video src={td4} controls="controls" className="portfolio-pic" />
             <p className="portfolio-aside">
-              Once your order has been fulfilled, you will see a thank you
-              screen, as well as a list of the products you just purchased. Once
-              you’ve placed an order, you can go to your profile page to see all
-              of your personal information, as well as your order history.
+              Once the order has been fulfilled, the user will see a thank you
+              screen, as well as a list of the products they just purchased.
+              Users can also navigate to their profile page where they can view
+              the personal information associated with their account, as well as
+              all orders they have placed.
             </p>
           </div>
           <div className="portfolio-sect">
             <video src={td5} controls="controls" className="portfolio-pic" />
             <p className="portfolio-aside">
-              As an admin, we can create new products with the add product form
-              at the top of the page, where we can input all the necessary data
-              to display a new product for purchase. We can also “delete” a
+              Admins can create new products with the "Add Product" form at the
+              top of the page, where they can input all the necessary data to
+              display a new product for purchase. They can also “delete” a
               product so it is no longer available to purchase, with a handy
-              confirmation message to ensure there are no accidents. Lastly, we
-              have the power to edit the name, description, price, or photo of a
-              product, in case we need to update certain product information.
+              confirmation message to ensure there are no accidents. Lastly,
+              they have the power to edit the name, description, price, or photo
+              of a product, in case we need to update certain product
+              information.
             </p>
           </div>
         </div>
       </div>
       <hr />
-      <div className="portfolio-project">
-        <b className="portfolio-name">
+      <div className="portfolio-project section">
+        <h3 className="portfolio-name">
           Fitness Trac.kr
           <a
             href="https://github.com/spencer-hurd/UNIV_FitnessTrackr_Starter"
@@ -126,7 +125,7 @@ const Portfolio = () => {
           >
             <SiNetlify />
           </a>
-        </b>
+        </h3>
         <p className="portfolio-desc">
           Fitness Trac.kr is an application designed for users to track their
           workout routines. This full stack web application developed by myself
@@ -179,8 +178,8 @@ const Portfolio = () => {
         </div>
       </div>
       <hr />
-      <div className="portfolio-project">
-        <b className="portfolio-name">
+      <div className="portfolio-project section">
+        <h3 className="portfolio-name">
           Stranger's Things
           <a
             href="https://github.com/spencer-hurd/StrangerThings"
@@ -196,35 +195,43 @@ const Portfolio = () => {
           >
             <SiNetlify />
           </a>
-        </b>
+        </h3>
         <p className="portfolio-desc">
-          Stranger's Things is a consumer-to-consumer based e-commerce site that
-          allows users to create detailed listings to sell or trade items, as
-          well as the ability to message any sellers.
+          Stranger's Things is a React app featuring a consumer-to-consumer
+          marketplace for goods and services. It enables users to create posts,
+          message other users regarding their posts, and delete their own posts.
+          Account authentication is required to create and manage posts, and
+          users are able to easily navigate the app with a range of features and
+          functions.
         </p>
         <div className="portfolio-content">
           <div className="portfolio-sect">
             <video src={st1} controls="controls" className="portfolio-pic" />
             <p className="portfolio-aside">
-              After you open the website you can log in blah bleh blahbb
-              uwhawruahua ashfuishdf sdfhisfhsuid dfhisdfhs sdhifhsifn
-              sifsufisdf sdfhisdhjfisdhf sdifhsdifh dsidhfishfishfishsd
+              This clip demonstrates the process of registering for an account
+              on Stranger's Things, beginning with navigating to the
+              registration page and entering the required credentials. The clip
+              highlights the user-friendly interface of the app, allowing users
+              to quickly and easily sign up for an account.
             </p>
           </div>
           <div className="portfolio-sect">
             <video src={st2} controls="controls" className="portfolio-pic" />
             <p className="portfolio-aside">
-              After you open the website you can log in blah bleh blahbb
-              uwhawruahua ashfuishdf sdfhisfhsuid dfhisdfhs sdhifhsifn
-              sifsufisdf sdfhisdhjfisdhf sdifhsdifh dsidhfishfishfishsd
+              Upon registration, users can navigate to the form to create a
+              listing, where they can enter a title, description, location, and
+              select the option of delivery. Once posted, the new listing will
+              populate on the home page with the rest of the posts.
             </p>
           </div>
           <div className="portfolio-sect">
             <video src={st3} controls="controls" className="portfolio-pic" />
             <p className="portfolio-aside">
-              After you open the website you can log in blah bleh blahbb
-              uwhawruahua ashfuishdf sdfhisfhsuid dfhisdfhs sdhifhsifn
-              sifsufisdf sdfhisdhjfisdhf sdifhsdifh dsidhfishfishfishsd
+              Users can send messages to authors of posts by clicking a button
+              rendered on every post but the user's. They will be brought to a
+              new page where the message can be typed and sent. Once a user has
+              received or sent a message, it will show up in the user's Messages
+              tab.
             </p>
           </div>
           <div className="pb"></div>

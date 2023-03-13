@@ -4,38 +4,30 @@
 
 html {
   width: 100%;
+  display: flex;
 }
 
 .h-3 {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+.section:hover h3 {
+  font-weight: bold;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  color: #ff5036;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
 }
 
 body {
-  padding-top: 5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  margin-top: 5rem;
   background-color: aliceblue;
   color: #033863;
 }
-
-.section {
-  margin: 1rem;
-}
-/* HOME PAGE */
 
 @media only screen and (max-width: 768px) {
   #root {
     display: flex;
     justify-content: center;
-  }
-
-  body {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .App {
-    width: auto;
-    /* max-width: 768px; */
   }
 }

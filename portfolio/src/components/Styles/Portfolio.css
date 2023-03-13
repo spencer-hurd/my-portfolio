@@ -35,6 +35,9 @@
   color: rgb(3, 56, 99);
   margin-left: 0.25rem;
 }
+#portfolio {
+  padding: 5%;
+}
 
 .git-link:hover {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -47,36 +50,20 @@
 }
 
 @media only screen and (max-width: 768px) {
-  #portfolio {
-    padding: 1rem;
-  }
-
-  .page-name {
-    font-size: 1.25rem;
-  }
-
-  .page-desc {
-    font-size: 0.75rem;
-  }
-
   .portfolio-pic {
     background-color: none;
-    height: min-content;
-    width: 15rem;
+    height: auto;
+    max-width: 25rem;
     margin: 0.75rem;
   }
   .portfolio-aside {
     height: min-content;
-    max-width: 30rem;
+    max-width: 20rem;
     margin: 0.75rem;
   }
   .portfolio-project {
     display: flex;
     flex-direction: column;
-  }
-
-  .portfolio-desc {
-    font-size: 0.75rem;
   }
 
   .portfolio-sect {
@@ -85,12 +72,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0.75rem;
-    font-size: 0.75rem;
+    margin: auto;
   }
-  .portfolio-name {
-    font-size: 1rem;
-  }
+
   .portfolio-content {
     display: flex;
     align-items: center;

@@ -46,7 +46,7 @@ footer {
 @media only screen and (max-width: 768px) {
   footer {
     height: min-content;
-    font-size: 0.75rem;
+    font-size: auto;
   }
 
   .footer.container {
@@ -64,7 +64,7 @@ footer {
   }
 
   .icons svg {
-    font-size: 0.75rem;
+    font-size: 1.25rem;
     color: #ff5036;
   }
 }

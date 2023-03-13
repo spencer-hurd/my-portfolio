@@ -2,11 +2,13 @@ import AboutPhotos from "./AboutPhotos";
 import "./Styles/About.css";
 const About = () => {
   return (
-    <div id="about">
-      <h3 id="abt-h3">About Me</h3>
+    <div id="about" className="section">
+      <h3 id="abt-h3" className="page-name">
+        About Me
+      </h3>
       <hr />
       <AboutPhotos />
-      <div className="aboutsection section">
+      <div className="aboutsection ">
         <p>
           I am Spencer, a full-stack software engineer passionate about creating
           innovative and impactful projects. After completing a 12-week bootcamp
