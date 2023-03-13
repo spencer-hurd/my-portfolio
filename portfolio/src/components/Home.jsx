@@ -1,5 +1,6 @@
 import CurrentProjects from "./CurrentProjects";
 import TechStack from "./TechStack";
+import resume from "/src/assets/SpencerHurdResume.pdf";
 import "./Styles/Home.css";
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
             I'm eager to start a career in web development and use my newfound
             skills to make impactful projects.
           </p>
-          <a href="src/assets/SpencerHurdResume.pdf" download>
+          <a href={resume} download>
             <button id="resume-button">Download Resume PDF</button>
           </a>
         </div>
